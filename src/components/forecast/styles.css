@@ -1,0 +1,47 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.forecast-header {
+  margin-bottom: 30px;
+}
+
+.forecast {
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 50px;
+  margin: 50px;
+  width: fit-content;
+  align-self: center;
+  background-color: rgb(248, 140, 90);
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  color: #fff;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#todays-forecast {
+  align-self: center;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.week-forecast-container {
+  display: flex;
+  width: 700px;
+}
+
+.hourly,
+.daily {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s;
+}
+
+.hourly:hover,
+.daily:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
